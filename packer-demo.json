@@ -15,8 +15,8 @@
   "provisioners": [
     {
     "type": "file",
-    "source": "spring-petclinic-rest-2.4.2.jar",
-    "destination": "/tmp/spring-petclinic-rest-2.4.2.jar"
+    "source": "springpetclinic.jar",
+    "destination": "/tmp/springpetclinic.jar"
    },
    {
     "type": "shell",
