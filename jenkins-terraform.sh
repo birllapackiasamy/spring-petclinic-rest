@@ -3,16 +3,8 @@ set -ex
 
 AWS_REGION="ap-south-1"
 
+ARTIFACT=`packer build -machine-readable packer-demo.json | awk -F, '$0 ~/artifact,0,id/ {print $6}'`
 
-echo "Access keys:: ${aws_access_key}"
-echo "access keys donee:"
-
-
-ARTIFACT=`packer build -machine-readable build/packer-demo.json | awk -F, '$0 ~/artifact,0,id/ {print $6}'`
-echo "packer output:"
-cat build/packer-demo.json
-
-packer build -machine-readable build/packer-demo.json | awk -F, '$0 ~/artifact,0,id/ {print $6}'
 
 AMI_ID=`echo $ARTIFACT | cut -d ':' -f2`
 echo "AMI ID: ${AMI_ID}"
