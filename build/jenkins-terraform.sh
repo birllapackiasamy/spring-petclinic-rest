@@ -4,7 +4,7 @@ set -ex
 AWS_REGION="ap-south-1"
 
 
-echo "Access keys:: ${access_key}"
+echo "Access keys:: ${aws_access_key}"
 echo "access keys donee:"
 
 
