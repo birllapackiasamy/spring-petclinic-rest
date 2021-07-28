@@ -1,12 +1,12 @@
 {
   "variables": {
-    "username": ${access_key},
-    "password": $secret_key
+    "aws_access_key" : "{{ env `AWS_ACCESS_KEY` }}",
+    "aws_secret_key" : "{{ env `AWS_SECRET_KEY` }}"
   },
   "builders": [{
     "type": "amazon-ebs",
-    "access_key": "{{user `username`}}",
-    "secret_key": "{{user `password`}}",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
     "region": "ap-south-1",
     "source_ami": "ami-0bd1a64868721e9ef",
     "instance_type": "t2.micro",
