@@ -15,8 +15,8 @@
   "provisioners": [
     {
     "type": "file",
-    "source": "springpetclinic.jar",
-    "destination": "/tmp/springpetclinic.jar"
+    "source": "artifacts",
+    "destination": "/tmp/artifacts"
    },
    {
     "type": "shell",

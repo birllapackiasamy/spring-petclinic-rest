@@ -2,4 +2,5 @@
 apt-get update
 apt-get install -y default-jre
 
-java /tmp/springpetclinic.jar
+java /tmp/artifacts/springpetclinic.jar
+
