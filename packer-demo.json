@@ -15,8 +15,18 @@
   "provisioners": [
     {
     "type": "file",
-    "source": "artifacts",
+    "source": "artifacts/",
     "destination": "/tmp/artifacts"
+   },
+   {
+    "type": "file",
+    "source": "deploy.sh",
+    "destination": "/tmp/"
+   },
+   {
+    "type": "file",
+    "source": "deploy.sh",
+    "destination": "/tmp/deploy1.sh"
    },
    {
     "type": "shell",
