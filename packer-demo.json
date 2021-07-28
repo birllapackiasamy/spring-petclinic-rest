@@ -17,7 +17,7 @@
     "type": "file",
     "source": "spring-petclinic-rest-2.4.2.jar",
     "destination": "/tmp/spring-petclinic-rest-2.4.2.jar"
-   }
+   },
    {
     "type": "shell",
     "scripts": [  "deploy.sh"   ],
